@@ -35,13 +35,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   
 
-    const imageUrls = [
-        'images/image4.png',
-        'images/image5.png',
-        'images/image6.png',
-        'images/image7.png',
-        'images/image8.png',
-    ];
+  
+const imageUrls = [
+    'images/image4.jpg',
+    'images/image5.jpg',
+    'images/image6.jpg',
+    'images/image8.jpg',
+    'images/image9.png',
+];
 
 let currentIndex = 0;
 
