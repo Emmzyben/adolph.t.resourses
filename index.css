@@ -236,6 +236,7 @@ background-color: #FF595A;
 
 #div1{
   width: 65%;
+  line-height: 25px;
 }
 .div1{
   display: flex;
@@ -540,7 +541,7 @@ font-weight: 700;
   flex-direction: row;
 }
 #title>span>img{
-width: 120px;
+width: 100px;
 height: 60px;
 }
 #title>span>p{
@@ -553,9 +554,36 @@ footer{
   color: rgb(27, 26, 26);
   font-size: 14px;
 }
+#about{
+  display: flex;
+  flex-direction: row;
+}
+#about>div{
+  margin: 20px;
+  width: 50%;
+}
+
+#about>.d2{
+  padding: 10px;
+  line-height: 23px;
+}
+#about img{
+  width: 100%;
+}
 
 @media only screen and (max-width: 700px) {
- 
+  .frt{
+    margin:20px;
+  }
+ #about{
+  flex-direction: column;
+ }
+ #about>div{
+  width: auto;
+ }
+ #about>.d2{
+  padding: 10px;
+ }
   aside{
     display: flex;flex-direction: row;
                     }

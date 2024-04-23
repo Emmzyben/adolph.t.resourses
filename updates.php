@@ -236,7 +236,6 @@ ul li{
             ?>
         </ul>
     </div>
-
     <?php
     // Close the database connection
     mysqli_close($connection);
