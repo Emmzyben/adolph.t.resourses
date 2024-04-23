@@ -138,6 +138,20 @@ ul li{
   animation: spin 2s linear infinite;
   z-index: -1000;
 }
+#slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+#slider img {
+  width: 100%;
+  display: none;
+  height: 200px;
+}
+
+#slider img.active {
+  display: block;
+}
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
@@ -254,7 +268,7 @@ background-color: #FF595A;
  background-color: #E7E7E7;
  text-align: center;
  padding: 20px;
- height: 200px;
+ height: auto;
 }
 
 #verify{
@@ -284,6 +298,12 @@ background-color: #FF595A;
   box-shadow: 2px 2px 10px #c45c30;
 }
 @media screen and (max-width: 700px) {
+  body p{
+    font-size: 15px;
+  }
+.full-width-image {
+  height: 300px;
+}
   #verify>div{
     width: auto;
   }
@@ -553,6 +573,7 @@ footer{
   text-align: left;
   color: rgb(27, 26, 26);
   font-size: 14px;
+  line-height: 23px;
 }
 #about{
   display: flex;

@@ -40,7 +40,6 @@ const imageUrls = [
     'images/image4.jpg',
     'images/image5.jpg',
     'images/image6.jpg',
-    'images/image8.jpg',
     'images/image9.png',
 ];
 
@@ -84,3 +83,36 @@ const closeMenu = () => {
 
 
 
+let currentImageIndex = 0;
+const images = document.querySelectorAll("#slider img");
+
+function showImage(index) {
+  images.forEach(img => img.classList.remove("active"));
+  images[index].classList.add("active");
+}
+
+function nextImage() {
+  currentImageIndex++;
+  if (currentImageIndex >= images.length) {
+    currentImageIndex = 0;
+  }
+  showImage(currentImageIndex);
+}
+
+function prevImage() {
+  currentImageIndex--;
+  if (currentImageIndex < 0) {
+    currentImageIndex = images.length - 1;
+  }
+  showImage(currentImageIndex);
+}
+
+function autoSlide() {
+  nextImage();
+}
+
+// Show the first image initially
+showImage(currentImageIndex);
+
+// Start auto sliding
+setInterval(autoSlide, 3000); // Change 2000 to the desired interval in milliseconds
