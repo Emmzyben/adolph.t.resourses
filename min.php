@@ -32,120 +32,110 @@ $result = $conn->query($sql);
 
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/logo.png">
-   <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <link rel="stylesheet" href="index.css">
-    <title>Admin page</title>
-    <style>
-        .nav-container {
-          position: relative;
-          display: inline-block;
-        }
-        
-        #dropdown {
-          display: none;
-          position: absolute;
-          top: 100%;
-          left: 0;
-          background-color: #382968;
-          padding: 10px 0;
-          width: 300px;
-          text-align: center;
-        }
-        
-        #dropdown a:hover {
-          background-color: grey;
-        }
-        
-        #dropdown a {
-          border-bottom: 1px solid white;
-          list-style-type: none;
-        }
-        
-        #dropdown a {
-          color: white;
-          display: block;
-          font-weight: lighter;
-          padding-bottom: 10px;
-        }
-        
-        #hoverer {
-          cursor: pointer;
-        }
-        
-        /* Show the dropdown when either the "Services" link or the dropdown itself is hovered */
-        #hoverer:hover + #dropdown,
-        #dropdown:hover {
-          display: block;
-        }
-        #border{
-            border: 1px solid black;
-        }<style>
-    /* Define CSS styles for the container div */
-    #defaultDiv {
-        display: block;
-        margin: 20px;
-        padding: 10px;
-        background-color: #382968;
-        font-size: 20px;
-        color: white;
-        font-weight: bolder;
-        text-align: center;
-    }
-
-    /* Define CSS styles for the certificates container */
-    .certificates-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px; /* Add some space between certificates */
-        margin-top: 10px;
-    }
-
-    /* Define CSS styles for each certificate */
-    .certificate-details {
-        padding: 10px;
-        border: 1px solid #382968;
-        margin-bottom: 10px;
-        box-sizing: border-box;
-        font-size: 13px;
-    }
-.certificate-image{
-    width: 70px;
-}
-    /* Define a media query for smaller screens */
-    @media (max-width: 768px) {
-        .certificate-details {
-            flex: 0 0 calc(100% - 10px); /* Full width for each certificate on smaller screens */
-        }
-    }
 
 
-           </style>
-        </head>
-        <body>
-            <header class="text-gray-600 body-font w-full z-50" style="border-bottom:10px solid #382968" >
-                <div class="title-font font-medium text-gray-900" id="custom-container" style="height: 80px;">
-                  <div style="text-align: left;">
-                    <img src="images/logo.png" width="150px" style="margin-left: 4%;" />
-                    <h1 class="text-[#382968] cursor-pointer" style="font-size: 13px; padding-left: 20px;">Adolph T. Resources Nigeria Limited</h1>
-                  </div>
-              
-                  <div id="upul">
-                    <p class="text-gray-900 font-bold cursor-pointer">Email: support@adolphtresources.com.ng</p>
-                    <p class="text-gray-900 font-bold cursor-pointer">Tel1: +234 (0) 810 238 7889<br /> Tel2: +234 (0) 812 487 4990</p>
-                  </div>
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="shortcut icon" href="images/logo.png">
+                <title>Adolph.T Resources</title>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <script src="https://kit.fontawesome.com/f0fb58e769.js" crossorigin="anonymous"></script>
+                <script src="https://cdn.tailwindcss.com"></script>
+                <link rel="stylesheet" href="index.css">
+                <style>
+   
+                    #defaultDiv {
+                        display: block;
+                        margin: 20px;
+                        padding: 10px;
+                        background-color: #382968;
+                        font-size: 20px;
+                        color: white;
+                        font-weight: bolder;
+                        text-align: center;
+                    }
+                
+                    /* Define CSS styles for the certificates container */
+                    .certificates-container {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        gap: 10px; /* Add some space between certificates */
+                        margin-top: 10px;
+                    }
+                
+                    /* Define CSS styles for each certificate */
+                    .certificate-details {
+                        padding: 10px;
+                        border: 1px solid #382968;
+                        margin-bottom: 10px;
+                        box-sizing: border-box;
+                        font-size: 13px;
+                    }
+                .certificate-image{
+                    width: 70px;
+                }
+                    /* Define a media query for smaller screens */
+                    @media (max-width: 768px) {
+                        .certificate-details {
+                            flex: 0 0 calc(100% - 10px); /* Full width for each certificate on smaller screens */
+                        }
+                    }
+                
+                
+                           </style>
+            </head>
+            <body>
+              <div id="sidebody"></div>
+              <div id="middle">    
+                <header>
+                <div style="padding: 20px;padding-bottom: 0;">
+                  <img src="images/logo.png" alt="">
+                  <p style="color: purple;">   Adolph T. Resources Nigeria Limited</p>
                 </div>
-              
-              </header>
-        
-              <!-- nav -->
+                    <div id="center"> 
+                     <span >Welcome To Adolph T. Resources Nigeria Limited</span> 
+                    <div style=" background-color: #c45c30;color: white;padding-top: 0.5px;"> 
+                       <p>Commercial, Industrial & Domestic Scaffolding Services.</p> 
+                   </div>
+                   <div id="nav">
+                      <div><a href="index.html">Home</a> </div>   
+                      <div><a href="about.html">About Us</a></div>        
+                      <div><a href="services.html">Our Products & Services</a> </div>
+                      <div><a href="certificate-verification.html">Certificate Verification</a></div>  
+                      <div><a href="contact.html">Contact Us</a> </div>                                                                            
+                   </div>
+                </div>
+                
+                    </header>   
+                       
+                        <aside> 
+                          <div id="title" >
+                            <span><img src="images/logo.png" alt="" ></span>
+                            <span><p>Adolp T.Resources</p></span>
+                        </div> 
+                            <div onclick="openNav()" >
+                                <div class="container1" onclick="myFunction(this)" id="sideNav">
+                                    <div class="bar1"></div>
+                                    <div class="bar2"></div>
+                                    <div class="bar3"></div>
+                                  </div>
+                                </div>
+                        </aside>
+                
+                
+                          <div id="mySidenav" class="sidenav">
+                            <img src="images/logo.png" alt="" width="70px" height="70px"><br>
+                              <a href="index.html">Home</a>
+                              <a href="about.html">About Us</a>
+                              <a href="services.html">Our Products & Services</a> 
+                              <a href="certificate-verification.html">Certificate Verification</a>
+                              <a href="contact.html">Contact Us</a>
+                          </div>
+                
+                      
         
 
     <div class="border-b border-gray-200 dark:border-gray-700" style="border-bottom: 1px solid #382968;" >
